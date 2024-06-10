@@ -1,0 +1,92 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root styles */
+
+:root {
+  /* Font styles */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Font rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+
+  /* Dark mode colors */
+  --color-dark-grey: #161616;
+  --color-dark-grey-2: #242424;
+  --color-violet: #7f39fb;
+  --color-orange: #ff9800;
+  --color-green: #00e676;
+  --color-light-blue: #00bfff;
+
+  /* Light mode colors */
+  --color-light-grey: #f5f5f5;
+  --color-light-grey-2: #e0e0e0;
+  --color-light-violet: #e0b0ff;
+  --color-light-orange: #ffd180;
+  --color-light-green: #90ee90;
+  --color-light-blue: #add8e6;
+
+  /* Shadow colors */
+  --color-shadow-dark-grey: #00000040;
+  --color-shadow-dark-grey-2: #00000029;
+  --color-shadow-violet: #7f39fb40;
+  --color-shadow-orange: #ff980040;
+  --color-shadow-green: #00e67640;
+  --color-shadow-light-blue: #00bfff40;
+
+  --color-shadow-light-grey: #00000014;
+  --color-shadow-light-grey-2: #0000000d;
+  --color-shadow-light-violet: #e0b0ff40;
+  --color-shadow-light-orange: #ffd18040;
+  --color-shadow-light-green: #90ee9040;
+  --color-shadow-light-blue: #add8e640;
+
+  /* Gray scales */
+  --color-gray-0: #ffffff;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c2c2c2;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #858585;
+  --color-gray-600: #666666;
+  --color-gray-700: #4d4d4d;
+  --color-gray-800: #333333;
+  --color-gray-900: #1a1a1a;
+  --color-gray-1000: #0a0a0a;
+
+  /* Radius */
+  --radius-0: 0px;
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-3: 12px;
+  --radius-4: 16px;
+  --radius-5: 20px;
+  --radius-6: 24px;
+  --radius-7: 28px;
+  --radius-8: 32px;
+  --radius-9: 36px;
+  --radius-10: 40px;
+
+
+  /* Hover colors */
+  --color-hover-violet: #8749ff;
+  --color-hover-orange: #ffa91a;
+  --color-hover-green: #00f08c;
+  --color-hover-light-blue: #00c8ff;
+
+
+  /* Set colors */
+  color: var(--color-gray-0);
+}

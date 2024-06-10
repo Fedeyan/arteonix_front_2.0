@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 15px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form_input {
+    width: 100%;
+    background: none;
+    border: 1px solid var(--color-gray-600);
+    color: var(--color-gray-0);
+    padding: 12px 15px;
+    border-radius: var(--radius-2);
+}
+
+.save_session_control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_submit_control {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.submit_button {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: var(--radius-2);
+    border: 1px solid var(--color-gray-600);
+    background: var(--color-violet);
+    color: var(--color-gray-0);
+}
+
+.submit_button:hover {
+    background: var(--color-hover-violet);
+
+
+}
+
+.register_passwords_container { 
+    display: flex;
+    gap: 7px;
+
+}

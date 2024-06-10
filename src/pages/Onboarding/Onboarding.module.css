@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.title {
+    font-size: 2.6rem;
+}
+
+.title_sub {
+    font-size: 0.9rem;
+}
+
+.register_link {
+    color: var(--color-violet);
+}
+
+.register_link:hover {
+    color: var(--color-hover-violet);
+    text-align: center;
+
+
+}
+
+.bottom_form_text {
+    color: var(--colo-gray-0);
+    text-align: center;
+}

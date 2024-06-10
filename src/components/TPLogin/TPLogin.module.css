@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+.buttons_container {
+    display: flex;
+    gap: 7px;
+
+}
+
+.social_button {
+    background: none;
+    border: 1px solid  var(--color-gray-600);
+    color: var(--color-gray-0);
+    font-size: x-large;
+    display: flex;
+    padding: 10px 15px;
+    border-radius: var(--radius-2);
+    width: 100%;
+    justify-content: center;
+}
+
+
+  
