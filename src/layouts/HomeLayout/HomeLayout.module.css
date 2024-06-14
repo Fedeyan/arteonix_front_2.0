@@ -1,0 +1,32 @@
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 200px 150px;
+    min-width: 420px;
+    gap: 20px;
+    max-height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+.feed {
+    margin: 20px 0;
+    margin-left: 20px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 300px;
+}
+
+.middle_bar {
+    background-color: var(--components-gray);
+    margin: 15px 0;
+}

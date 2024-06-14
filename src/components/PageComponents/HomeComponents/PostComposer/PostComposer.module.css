@@ -1,0 +1,52 @@
+.container {
+    background-color: var(--components-gray);
+    border-radius: var(--radius-3);
+    display: flex;
+    box-shadow: 0 0 3px var(--color-gray-200);
+    flex-direction: column;
+}
+
+.top_side {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+
+}
+
+.profile_pic {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-2);
+}
+
+.create_post_button {
+    width: 100%;
+    border-radius: var(--radius-2);
+    background: var(--color-dark-grey);
+    color: var(--color-gray-0);
+    text-align: start;
+    text-indent: 15px;
+    border: 1px solid var(--color-gray-700);
+}
+
+.bot_side {
+    display: flex;
+    padding: 10px;
+    padding-top: 0;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.bot_side .bot_side_item {
+}
+
+.fake_share_button {
+    margin-left: auto;
+    border-radius: var(--radius-2);
+    padding: 10px 15px;
+    background-color: var(--color-dark-grey);
+    border: 1px solid var(--color-gray-700);
+    color: var(--color-gray-0);
+}

@@ -11,4 +11,10 @@ const HorizontalDivider = () => {
     )
 }
 
+export const HorizontalDividerPlain = () => {
+    return (
+        <div className={Styles.divider_horizontal_plain}></div>
+    )
+}
+
 export default HorizontalDivider

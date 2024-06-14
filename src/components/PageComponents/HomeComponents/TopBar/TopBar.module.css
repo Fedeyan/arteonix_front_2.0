@@ -1,0 +1,52 @@
+.container {
+    grid-column: 1 / -1;
+    background-color: var(--components-gray);
+    border-bottom: 1px solid var(--color-violet);
+    height: 50px;
+    display: grid;
+    grid-template-columns: 220px 2fr 1fr;
+}
+.left_part{ 
+  background-color: lime;
+  display: flex;
+  height: 100%;
+  place-items: center;
+  place-content: center;
+  font-size: small;
+}
+.search {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  grid-column: 2;
+  height: 100%;
+}
+
+.profile {
+  /* display: flex;
+  height: 100%; */
+  background-color: orangered;
+    display: flex;
+  height: 100%;
+  place-items: center;
+  place-content: center;
+  font-size: small;
+}
+
+.profilePic {
+  /* width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%; */
+}
+
+.options {
+  /* display: flex;
+  gap: 10px; */
+}
+
+.option {
+  /* padding: 5px 10px;
+  border: 1px solid var(--color-violet);
+  border-radius: 5px;
+  cursor: pointer; */
+}

@@ -1,10 +1,72 @@
-/* Global styles */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #495057;
+}
+
+::-moz-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-moz-scrollbar-track {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #495057;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d #2e2e2e;
+}
+
+body::-ms-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body::-ms-scrollbar-track {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+
+body::-ms-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 10px;
+}
+
+body::-ms-scrollbar-thumb:hover {
+  background: #495057;
+}
+
+
 
 /* Root styles */
 
@@ -65,7 +127,7 @@
   --color-gray-800: #333333;
   --color-gray-900: #1a1a1a;
   --color-gray-1000: #0a0a0a;
-
+  --components-gray: #323232;
   /* Radius */
   --radius-0: 0px;
   --radius-1: 4px;
@@ -78,7 +140,17 @@
   --radius-8: 32px;
   --radius-9: 36px;
   --radius-10: 40px;
-
+  /*Paddings*/
+  --padding-0: 0px;
+  --padding-1: 4px;
+  --padding-2: 8px;
+  --padding-3: 12px;
+  --padding-4: 16px;
+  --padding-5: 20px;
+  --padding-6: 24px;
+  --padding-7: 28px;
+  --padding-8: 32px;
+  --padding-9: 36px; 
 
   /* Hover colors */
   --color-hover-violet: #8749ff;

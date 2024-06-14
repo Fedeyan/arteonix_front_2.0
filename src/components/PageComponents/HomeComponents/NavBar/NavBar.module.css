@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--components-gray);
+    gap: 1.5vh;
+    grid-row: 2 / -1 ;
+}

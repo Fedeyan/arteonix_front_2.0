@@ -1,0 +1,14 @@
+.list_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+.list_img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}

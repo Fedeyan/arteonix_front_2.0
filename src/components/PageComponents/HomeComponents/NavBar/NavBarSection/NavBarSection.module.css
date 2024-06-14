@@ -1,0 +1,13 @@
+.NavBarSection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.NavBarSection:last-child {
+    margin-top: auto;
+}
+
+.section_title {
+    margin-top: 5px;
+}

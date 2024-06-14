@@ -1,0 +1,54 @@
+.container {
+    background-color: var(--color-dark-grey);
+    display: flex;
+    border-radius: var(--radius-2);
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 37vw;
+
+}
+
+
+
+
+
+.cancel,
+.input,
+.submit {
+    border: none;
+    background: none;
+    height: 100%;
+    color: white;
+
+}
+
+.cancel,
+.submit {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel {}
+
+.input {
+    height: 100%;
+    outline: none;
+    padding: 5px 5px;
+    width: 100%;
+
+
+}
+
+.input_not_showing_button {
+    padding: 5px 15px;
+
+}
+
+.input:focus {
+    outline: none;
+}
+
+.submit {}
