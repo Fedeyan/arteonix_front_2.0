@@ -6,12 +6,11 @@ const profilePic = "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33V
 const TopBar = () => {
   return (
     <div className={Styles.container}>
-      <div className={Styles.left_part}>contenido de la parte de la izquierda</div>
+      <div className={Styles.left_part}><h3>Logo de ArteoniX</h3></div>
       <div className={Styles.search}>
         <SearchBar/>
       </div>
       <div className={Styles.profile}>
-        {/* <img className={Styles.profilePic} src={profilePic} alt="Profile Picture" /> */}
         profile
       </div>
 

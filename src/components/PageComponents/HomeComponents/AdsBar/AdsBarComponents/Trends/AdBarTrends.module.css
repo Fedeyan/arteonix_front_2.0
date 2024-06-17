@@ -1,0 +1,20 @@
+.container{ 
+    background-color: var(--components-gray);
+    border-radius: var(--radius-2);
+    padding: var(--padding-2) var(--padding-5);
+    padding-bottom: var(--padding-5);
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align:left;
+}
+
+.show_trends {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

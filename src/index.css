@@ -140,6 +140,7 @@ body::-ms-scrollbar-thumb:hover {
   --radius-8: 32px;
   --radius-9: 36px;
   --radius-10: 40px;
+  --rounded: 50%;
   /*Paddings*/
   --padding-0: 0px;
   --padding-1: 4px;

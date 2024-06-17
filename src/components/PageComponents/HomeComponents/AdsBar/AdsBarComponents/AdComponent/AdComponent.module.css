@@ -1,0 +1,22 @@
+.container {
+    background-color: var(--components-gray);
+    border-radius: var(--radius-2);
+    padding: var(--padding-2) var(--padding-5);
+    padding-bottom: var(--padding-5);
+}
+
+
+.ad_title {
+    margin-bottom: 10px;
+}
+
+
+.ad_image {
+    width: 100%;
+    border-radius: var(--radius-2);
+
+}
+
+.ad_subtitle {
+    margin-top: 10px;
+}

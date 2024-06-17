@@ -7,7 +7,6 @@
     grid-template-columns: 220px 2fr 1fr;
 }
 .left_part{ 
-  background-color: lime;
   display: flex;
   height: 100%;
   place-items: center;
@@ -25,7 +24,6 @@
 .profile {
   /* display: flex;
   height: 100%; */
-  background-color: orangered;
     display: flex;
   height: 100%;
   place-items: center;

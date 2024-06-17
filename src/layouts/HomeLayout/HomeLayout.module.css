@@ -9,7 +9,7 @@
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 200px 150px;
+    grid-template-columns: 1fr 250px 200px;
     min-width: 420px;
     gap: 20px;
     max-height: calc(100vh - 50px);
@@ -26,7 +26,7 @@
     min-height: 300px;
 }
 
-.middle_bar {
+.ads_bar {
     background-color: var(--components-gray);
     margin: 15px 0;
 }

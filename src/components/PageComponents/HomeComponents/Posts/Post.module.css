@@ -6,6 +6,10 @@
     padding: var(--padding-4);
 }
 
+.post:last-child {
+    margin-bottom: 30px;
+}
+
 .post__header {
     margin-bottom: 10px;
 }
