@@ -1,20 +1,23 @@
-import React from 'react'
-import './App.css'
-import Onboarding from './pages/Onboarding/Onboarding'
-import { Route, Routes } from 'react-router-dom'
-import Login from './pages/Login/Login'
-import Home from './pages/Home/Home'
+import React from "react";
+import "./App.css";
+import Onboarding from "./pages/Onboarding/Onboarding";
+import { Route, Routes } from "react-router-dom";
+import Login from "./pages/Login/Login";
+import Home from "./pages/Home/Home";
+import UserRoutes from "./components/protectedRoutes/UserRoutes";
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <Routes>
         <Route index element={<Login />} />
         <Route path="register" element={<Onboarding />} />
-        <Route path='home' element={<Home />} />
+        <Route element={<UserRoutes />}>
+          <Route path="home" element={<Home />} />
+        </Route>
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
