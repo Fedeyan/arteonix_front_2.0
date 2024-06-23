@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Styles from "./AuthForms.module.css";
 import handleInputChange from "../../../utils/Handlers/HandleInputChange";
 import submitRegister from "../../../utils/Handlers/submitRegister";
+import Loading from "../../loading/Loading";
 
-const Re = () => {
+const RegisterForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -12,11 +15,22 @@ const Re = () => {
     confirmPassword: "",
   });
 
-  return (
+  const [errorData, setErrorData] = useState({
+    username: "",
+    password: "",
+    email: "",
+    confirmPassword: "",
+  });
+
+  return isLoading ? (
+    <Loading type="SyncLoader" />
+  ) : (
     <div className={Styles.container}>
       {/* form */}
       <form
-        onSubmit={(e) => submitRegister(e, formData)}
+        onSubmit={(e) =>
+          submitRegister(e, formData, setErrorData, setIsLoading)
+        }
         className={Styles.form}
       >
         {/* username */}
@@ -29,8 +43,12 @@ const Re = () => {
             className={Styles.form_input}
             placeholder="Ej: JohnDoe24"
             value={formData.username}
-            onChange={(e) => handleInputChange(e, setFormData)}
+            onChange={(e) => handleInputChange(e, setFormData, setErrorData)}
           />
+
+          {errorData.username && (
+            <span className={Styles.input_error}>{errorData.username}</span>
+          )}
         </div>
 
         {/* Passwords */}
@@ -46,8 +64,12 @@ const Re = () => {
               className={Styles.form_input}
               placeholder="Ej: ContraSegura1"
               value={formData.password}
-              onChange={(e) => handleInputChange(e, setFormData)}
+              onChange={(e) => handleInputChange(e, setFormData, setErrorData)}
             />
+
+            {errorData.password && (
+              <span className={Styles.input_error}>{errorData.password}</span>
+            )}
           </div>
 
           {/* confirm password */}
@@ -60,8 +82,14 @@ const Re = () => {
               className={Styles.form_input}
               placeholder="Ej: ContraSegura1"
               value={formData.confirmPassword}
-              onChange={(e) => handleInputChange(e, setFormData)}
+              onChange={(e) => handleInputChange(e, setFormData, setErrorData)}
             />
+
+            {errorData.confirmPassword && (
+              <span className={Styles.input_error}>
+                {errorData.confirmPassword}
+              </span>
+            )}
           </div>
         </div>
 
@@ -76,8 +104,12 @@ const Re = () => {
               className={Styles.form_input}
               placeholder="Ej: johndoe24@gmail.com"
               value={formData.email}
-              onChange={(e) => handleInputChange(e, setFormData)}
+              onChange={(e) => handleInputChange(e, setFormData, setErrorData)}
             />
+
+            {errorData.email && (
+              <span className={Styles.input_error}>{errorData.email}</span>
+            )}
           </div>
 
           {/* submit */}
@@ -92,4 +124,4 @@ const Re = () => {
   );
 };
 
-export default Re;
+export default RegisterForm;

@@ -1,11 +1,12 @@
 import axios from "axios";
 
-export const registerUser = async ({ username, email, password }) => {
+export const registerUser = async ({ username, email, password, confirmPassword }) => {
   try {
     const query = await axios.post("/authentication/register", {
       username,
       email,
       password,
+      confirmPassword
     });
     const data = query.data;
     return data;
