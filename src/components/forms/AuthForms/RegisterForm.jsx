@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Styles from "./AuthForms.module.css";
 import handleInputChange from "../../../utils/Handlers/HandleInputChange";
 import submitRegister from "../../../utils/Handlers/submitRegister";
 import Loading from "../../loading/Loading";
+import BackButton from "../../backButton/BackButton";
 
 const RegisterForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -20,19 +21,27 @@ const RegisterForm = () => {
     password: "",
     email: "",
     confirmPassword: "",
+    formError: "",
   });
 
   return isLoading ? (
+
     <Loading type="SyncLoader" />
+
   ) : (
     <div className={Styles.container}>
+
       {/* form */}
       <form
-        onSubmit={(e) =>
-          submitRegister(e, formData, setErrorData, setIsLoading)
-        }
+        onSubmit={(e) => submitRegister(e, formData, setErrorData, setIsLoading)}
         className={Styles.form}
       >
+
+        {/* form error */}
+        {errorData.formError && (
+          <span className={Styles.form_error}>{errorData.formError}</span>
+        )}
+
         {/* username */}
         <div className={Styles.form_control}>
           <span className={Styles.input_title}>Usuario</span>
@@ -47,7 +56,9 @@ const RegisterForm = () => {
           />
 
           {errorData.username && (
-            <span className={Styles.input_error}>{errorData.username}</span>
+            <span className={`${Styles.input_error} ${Styles.input_error_fw}`}>
+              {errorData.username}
+            </span>
           )}
         </div>
 
@@ -120,6 +131,11 @@ const RegisterForm = () => {
           />
         </div>
       </form>
+
+      {errorData.formError &&
+        errorData.formError.toLowerCase().includes("usuario") && (
+          <BackButton to={"/"} text="Iniciar sesión" />
+        )}
     </div>
   );
 };

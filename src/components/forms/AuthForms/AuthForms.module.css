@@ -12,6 +12,11 @@
   gap: 15px;
 }
 
+.form_error {
+  color: red;
+  text-align: center;
+}
+
 .form_control {
   display: flex;
   flex-direction: column;
@@ -42,6 +47,10 @@
 .input_error {
   color: red;
   max-width: 170px;
+}
+
+.input_error_fw {
+  max-width: 100%;
 }
 
 .submit_button {

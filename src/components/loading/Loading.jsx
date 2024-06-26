@@ -1,13 +1,19 @@
 import React from "react";
-import { ClimbingBoxLoader, SyncLoader } from "react-spinners";
+import { ClimbingBoxLoader, SyncLoader, CircleLoader } from "react-spinners";
 import Styles from "./Loading.module.css";
 
-const Loading = ({ type, color = "white" }) => {
+const Loading = ({ type = "CircleLoader", color = "white", fwh = false }) => {
+  const parseType = type.toLowerCase();
+
   const SelectedLoader =
-    type.toLowerCase() === "ClimbingBoxLoader" ? ClimbingBoxLoader : SyncLoader;
+    parseType === "ClimbingBoxLoader"
+      ? ClimbingBoxLoader
+      : parseType === "CircleLoader"
+      ? CircleLoader
+      : SyncLoader;
 
   return (
-    <div className={Styles.container}>
+    <div className={`${Styles.container} ${fwh ? Styles.mvh_100 : ""}`}>
       <SelectedLoader color={color} />
     </div>
   );

@@ -9,7 +9,8 @@ export default function handleInputChange(event, setter, errorSetter, isCheckbox
     errorSetter(function (previousErrorState) {
         return {
             ...previousErrorState,
-            [event.target.name]: !isCheckbox ? "" : event.target.checked
+            [event.target.name]: !isCheckbox ? "" : event.target.checked,
+            formError: ""
         }
     })
 }

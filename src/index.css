@@ -66,8 +66,6 @@ body::-ms-scrollbar-thumb:hover {
   background: #495057;
 }
 
-
-
 /* Root styles */
 
 :root {
@@ -151,14 +149,13 @@ body::-ms-scrollbar-thumb:hover {
   --padding-6: 24px;
   --padding-7: 28px;
   --padding-8: 32px;
-  --padding-9: 36px; 
+  --padding-9: 36px;
 
   /* Hover colors */
   --color-hover-violet: #8749ff;
   --color-hover-orange: #ffa91a;
   --color-hover-green: #00f08c;
   --color-hover-light-blue: #00c8ff;
-
 
   /* Set colors */
   color: var(--color-gray-0);
